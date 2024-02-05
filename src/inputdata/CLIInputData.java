@@ -16,8 +16,8 @@ public class CLIInputData extends InputData {
     public String getCipherMode() {
         try {
             System.out.println("""           
-                Choose the mode: ENCRYPT / DECRYPT / BRUTE_FORCE 
-                """);
+                    Choose the mode: ENCRYPT / DECRYPT / BRUTE_FORCE
+                    """);
             cipherMode = ValidationInputData.validateCipherMode(scanner.next().toUpperCase().trim());
         } catch (IllegalCipherModeArgumentException e) {
             System.out.println("Illegal cipher mode");

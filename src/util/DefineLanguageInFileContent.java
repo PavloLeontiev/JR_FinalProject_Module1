@@ -3,7 +3,6 @@ package util;
 import alphabet.Alphabet;
 import alphabet.EnglishAlphabet;
 import alphabet.UkrainianAlphabet;
-
 import java.io.BufferedReader;
 import java.io.FileNotFoundException;
 import java.io.FileReader;
@@ -16,8 +15,9 @@ public class DefineLanguageInFileContent {
     private static int englishCoincidences;
     private static int ukrainianCoincidences;
     private static int bufferCapacity = 1024;
+
     public static Alphabet defineLanguage(String filePath) {
-        try(BufferedReader reader = new BufferedReader(new FileReader(filePath));) {
+        try (BufferedReader reader = new BufferedReader(new FileReader(filePath));) {
             char[] charArray = new char[bufferCapacity];
             reader.read(charArray);
             for (char ch : charArray) {
