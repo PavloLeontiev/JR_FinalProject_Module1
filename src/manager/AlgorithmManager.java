@@ -11,12 +11,14 @@ public class AlgorithmManager {
     private String filePath;
     private String key;
     private Algorithm algorithm;
-    public AlgorithmManager(String[] inputData){
+
+    public AlgorithmManager(String[] inputData) {
         cipherMode = inputData[0];
         filePath = inputData[1];
         key = inputData[2];
     }
-    public Algorithm initializeAlgorithm (String[] inputData){
+
+    public Algorithm initializeAlgorithm(String[] inputData) {
         Alphabet alphabet = DefineLanguageInFileContent.defineLanguage(filePath);
         int modifyKey = InitializeCaesarKey.initializeKey(cipherMode, filePath, key, alphabet);
         algorithm = new CaesarCipher(modifyKey, alphabet.getARRAY_LIST());

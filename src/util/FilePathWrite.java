@@ -3,8 +3,8 @@ package util;
 import mode.CipherMode;
 
 public class FilePathWrite {
-    public static String createFilePathWrite(String cipherMode,String filePathRead){
-        return switch (CipherMode.valueOf(cipherMode)){
+    public static String createFilePathWrite(String cipherMode, String filePathRead) {
+        return switch (CipherMode.valueOf(cipherMode)) {
             case ENCRYPT -> fileNameEncrypt(filePathRead);
             case DECRYPT, BRUTE_FORCE -> fileNameDecrypt(filePathRead);
         };

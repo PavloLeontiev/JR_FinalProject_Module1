@@ -20,12 +20,10 @@ public class InitializeCaesarKey {
             case DECRYPT -> getDecryptKey(key, arrayList);
             case BRUTE_FORCE -> getBruteForce(filePath, arrayList, stringArrayList);
         };
-
     }
 
     private static int getEncryptKey(String key, ArrayList<Character> alphabet) {
         return Integer.parseInt(key) % alphabet.size();
-
     }
 
     private static int getDecryptKey(String key, ArrayList<Character> alphabet) {

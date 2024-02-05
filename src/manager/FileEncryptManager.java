@@ -25,7 +25,7 @@ public class FileEncryptManager {
              BufferedWriter writer = new BufferedWriter(new FileWriter(filePathWrite))) {
             char[] array = new char[bufferCapacity];
             int charsRead = reader.read(array);
-            while(charsRead != -1) {
+            while (charsRead != -1) {
                 array = algorithm.encrypt(array, charsRead);
                 writer.write(array, 0, charsRead);
                 writer.flush();

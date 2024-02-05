@@ -10,9 +10,10 @@ public class InputDataManager {
     private final int FILE_PATH_ARGUMENT = 1;
     private final int KEY_ARGUMENT = 2;
     InputData inputData;
-    public String[] getInputData(String[] args){
+
+    public String[] getInputData(String[] args) {
         String[] data = new String[3];
-        if(args.length > 0){
+        if (args.length > 0) {
             inputData = new ConsoleInputData(args);
         } else {
             inputData = new CLIInputData();
