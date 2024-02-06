@@ -32,7 +32,6 @@ public class UkrainianAlphabet extends Alphabet {
     public ArrayList<Character> getARRAY_LIST() {
         return ARRAY_LIST;
     }
-
     public ArrayList<String> getFREQUENTLY_USED_WORDS() {
         return FREQUENTLY_USED_WORDS;
     }

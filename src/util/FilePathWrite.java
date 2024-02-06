@@ -1,5 +1,4 @@
 package util;
-
 import mode.CipherMode;
 
 public class FilePathWrite {

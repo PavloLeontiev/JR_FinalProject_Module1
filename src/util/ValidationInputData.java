@@ -4,7 +4,6 @@ import exception.FileNotFoundException;
 import exception.IllegalCipherModeArgumentException;
 import exception.IllegalKeyArgumentException;
 import mode.CipherMode;
-
 import java.io.File;
 
 public class ValidationInputData {

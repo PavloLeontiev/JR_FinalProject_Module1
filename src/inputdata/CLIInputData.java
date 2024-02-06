@@ -4,6 +4,7 @@ import exception.FileNotFoundException;
 import exception.IllegalCipherModeArgumentException;
 import exception.IllegalKeyArgumentException;
 import util.ValidationInputData;
+
 import java.util.Scanner;
 
 public class CLIInputData extends InputData {
@@ -15,7 +16,7 @@ public class CLIInputData extends InputData {
     public String getCipherMode() {
         try {
             System.out.println("""           
-                    Choose the mode: ENCRYPT / DECRYPT / BRUTE_FORCE 
+                    Choose the mode: ENCRYPT / DECRYPT / BRUTE_FORCE
                     """);
             cipherMode = ValidationInputData.validateCipherMode(scanner.next().toUpperCase().trim());
         } catch (IllegalCipherModeArgumentException e) {

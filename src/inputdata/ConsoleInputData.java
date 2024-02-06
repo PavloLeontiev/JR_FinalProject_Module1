@@ -22,7 +22,9 @@ public class ConsoleInputData extends InputData {
     }
 
     public String getKey(boolean isBruteForce) {
-        if (!isBruteForce) return ValidationInputData.validateKey(KEY_ARGUMENT);
+        if (!isBruteForce){
+            return ValidationInputData.validateKey(KEY_ARGUMENT);
+        }
         return null;
     }
 }

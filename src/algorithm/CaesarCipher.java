@@ -13,7 +13,6 @@ public class CaesarCipher extends Algorithm {
             encryptAlphabet.put(alphabetArray.get(i), alphabetArray.get((i + key) % alphabetArray.size()));
         }
     }
-
     public char[] encrypt(char[] array, int bytesRead) {
         char[] encryptedArray = new char[array.length];
         for (int i = 0; i < bytesRead; i++) {

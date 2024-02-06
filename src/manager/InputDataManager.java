@@ -1,5 +1,4 @@
 package manager;
-
 import inputdata.CLIInputData;
 import inputdata.ConsoleInputData;
 import inputdata.InputData;

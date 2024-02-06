@@ -7,15 +7,18 @@ import util.DefineLanguageInFileContent;
 import util.InitializeCaesarKey;
 
 public class AlgorithmManager {
+    private final int CIPHER_MODE_ARGUMENT = 0;
+    private final int FILE_PATH_ARGUMENT = 1;
+    private final int KEY_ARGUMENT = 2;
     private String cipherMode;
     private String filePath;
     private String key;
     private Algorithm algorithm;
 
     public AlgorithmManager(String[] inputData) {
-        cipherMode = inputData[0];
-        filePath = inputData[1];
-        key = inputData[2];
+        cipherMode = inputData[CIPHER_MODE_ARGUMENT];
+        filePath = inputData[FILE_PATH_ARGUMENT];
+        key = inputData[KEY_ARGUMENT];
     }
 
     public Algorithm initializeAlgorithm(String[] inputData) {

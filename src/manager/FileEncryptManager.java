@@ -2,7 +2,6 @@ package manager;
 
 import algorithm.Algorithm;
 import util.FilePathWrite;
-
 import java.io.*;
 
 public class FileEncryptManager {

@@ -1,5 +1,4 @@
 package manager;
-
 import algorithm.Algorithm;
 
 public class Manager {
